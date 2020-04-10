@@ -1,7 +1,15 @@
 html {
-  display: flex;
-  justify-content: center;
   align-items: center;
   font-family: Helvetica;
   font-weight: 100;
+}
+
+h1 {
+ font-size: 500px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

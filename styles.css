@@ -7,18 +7,21 @@ html {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+body {
+  margin: 3rem;
+}
+
+body::selection {
+  background: #ffb7b7;
+}
+
 h1 {
  font-size: 4rem;
  font-weight: 400;
 }
 
-body {
-  margin: 3rem;
-  /*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
+h1::selection {
+  background: ##ffb7b7;
 }
 
 a {
@@ -28,6 +31,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 video {

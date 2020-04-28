@@ -11,22 +11,22 @@ body {
   margin: 3rem;
 }
 
-body::selection {
-  background: #ffb7b7;
-}
-
 h1 {
  font-size: 4rem;
  font-weight: 400;
 }
 
 h1::selection {
-  background: ##ffb7b7;
+  background-color: lightgrey;
 }
 
 a {
   text-decoration: none;
   color: lightgrey;
+}
+
+a::selection {
+  background-color: lightgrey;
 }
 
 a:hover {
@@ -38,6 +38,10 @@ p {
   font-size: 1.5rem;
 }
 
+p::selection {
+  background-color: lightgrey;
+}
+
 video {
   margin-top: 4rem;
   width: 100%;
@@ -47,4 +51,8 @@ video {
 .bracket {
   color: lightgrey;
   background: none;
+}
+
+.bracket::selection {
+  background-color: lightgrey;
 }

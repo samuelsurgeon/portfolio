@@ -21,6 +21,15 @@ body {
   */
 }
 
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 video {
   margin-top: 4rem;
   width: 100%;

@@ -3,6 +3,24 @@
   padding: 0;
 }
 
+@media only screen and (min-width: 200px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
 html {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: left;
@@ -15,7 +33,6 @@ body {
 
 h1 {
   min-width: 20%;
-  font-size: 1.2rem;
   font-weight: 400;
   margin-right: 5%;
 }
@@ -25,7 +42,6 @@ h1::selection {
 }
 
 h2 {
-  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -36,6 +52,7 @@ h2::selection {
 a {
   text-decoration: none;
   color: black;
+  transition: 0.3s;
 }
 
 a::selection {
@@ -49,7 +66,6 @@ a:hover {
 
 p {
   margin-top: 1rem;
-  font-size: 1.2rem;
 }
 
 p::selection {
@@ -89,6 +105,8 @@ video {
 .location {
   color: lightgrey;
 }
+
+.
 
 mark:hover span {
   display: none;

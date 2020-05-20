@@ -29,6 +29,10 @@ h2 {
   font-weight: 400;
 }
 
+h2::selection {
+  background-color: lightgrey;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -39,7 +43,8 @@ a::selection {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: lightgrey;
+  text-decoration: none;
 }
 
 p {

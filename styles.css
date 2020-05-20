@@ -5,12 +5,11 @@
 
 html {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: lightgrey;
   cursor: default;
 }
 
 body {
-  margin: 3rem;
+  margin: 1rem;
 }
 
 h1 {
@@ -61,3 +60,7 @@ video {
   background-color: lightgrey;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+}

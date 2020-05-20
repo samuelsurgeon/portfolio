@@ -81,3 +81,14 @@ video {
   max-width: 35%;
 }
 
+.location {
+  color: lightgrey;
+}
+
+mark:hover span {
+  display: none;
+}
+
+mark:hover:before {
+  content: "Sydney"
+}

@@ -73,6 +73,11 @@ video {
   justify-content: space-between;
 }
 
-.contact {
-  min-width: 15%;
+.job {
+  flex-shrink: 3;
 }
+
+.bio {
+  max-width: 35%;
+}
+

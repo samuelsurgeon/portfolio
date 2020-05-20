@@ -16,12 +16,18 @@
   html {
   }
 }
+*/
 
 @media only screen and (min-width: 1000px) {
   html {
+    font-size: 14px;
+  }
+
+  .bio {
+    display: block;
   }
 }
-*/
+
 html {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: left;
@@ -91,6 +97,10 @@ video {
 
 .bio {
   max-width: 35%;
+}
+
+.project_title {
+  margin-top: 1rem;
 }
 
 mark:hover span {

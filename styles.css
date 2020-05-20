@@ -5,6 +5,7 @@
 
 html {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: left;
   cursor: default;
 }
 
@@ -13,12 +14,19 @@ body {
 }
 
 h1 {
- font-size: 2rem;
- font-weight: 400;
+  min-width: 20%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 5%;
 }
 
 h1::selection {
   background-color: lightgrey;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 a {
@@ -36,7 +44,7 @@ a:hover {
 
 p {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 p::selection {
@@ -63,4 +71,8 @@ video {
 .banner {
   display: flex;
   justify-content: space-between;
+}
+
+.contact {
+  min-width: 15%;
 }

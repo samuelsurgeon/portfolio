@@ -34,7 +34,6 @@ body {
 h1 {
   min-width: 20%;
   font-weight: 400;
-  margin-right: 5%;
 }
 
 h1::selection {
@@ -101,12 +100,6 @@ video {
 .bio {
   max-width: 35%;
 }
-
-.location {
-  color: lightgrey;
-}
-
-.
 
 mark:hover span {
   display: none;

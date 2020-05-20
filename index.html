@@ -9,9 +9,8 @@
   <body onload="startTime()">
     <section class="banner">
     <h1>Samuel Surgeon</h1>
-    <h1 class="job">Front-end Developer</h1>
+    <h1 class="job">Front-end Developer<br>Sydney, Australia <span id="clock">16:04:03</span><br>(+61) 455 022 008</h1>
     <h2 class="bio">His expertise lie in the design and implementation of complex web-applications, systems and services. He has experience working in both the commercial and cultural sectors with a deep understanding of current web technologies such as JavaScript, TypeScript, React, Redux, and Node.<!-- <span class="bracket">[JavaScript, TypeScript, React, Redux, Node]</span>--><br><br>His education includes a Bachelor of Communication Design and a Diploma of Software Engineering. You can reach him online at <a href="http://github.com/samuelsurgeon/" target="_blank">Github</a>, <a href="https://twitter.com/samuelsurgeon" target="_blank">Twitter</a>, <a href="https://www.instagram.com/samuel_surgeon/" target="_blank">Instagram</a>, <a href="https://www.linkedin.com/in/samuel-surgeon-09a31b1a8/" target="_blank">LinkedIn</a>, and through <a href="mailto:hello@samuelsurgeon.com" target="_blank">E-mail</a>.</h2>
-    <h2 class="location">&nbsp; <mark class="bracket"><span id="clock">16:04:03</span></mark><br></h2>
     </section>
     <article>
       <a href="https://samuelsurgeon.github.io/sorting-visualiser/" target="_blank">
@@ -29,22 +28,22 @@
       </a>
       <h2 class="project_title">A visualiser for different types of sorting algorithms.</h2>
     </article>
+    <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('clock').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
   </body>
-  <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('clock').innerHTML =
-      h + ":" + m + ":" + s;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-  </script>
 </html>

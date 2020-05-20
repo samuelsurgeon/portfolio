@@ -60,7 +60,7 @@ video {
 }
 
 .bracket {
-  color: lightgrey;
+  color: black;
   background: none;
 }
 
@@ -90,5 +90,5 @@ mark:hover span {
 }
 
 mark:hover:before {
-  content: "Sydney"
+  content: "Sydney UTC+10:00";
 }

@@ -55,6 +55,10 @@ h2::selection {
   background-color: lightgrey;
 }
 
+h3 {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -103,6 +107,10 @@ video {
   margin-top: 1rem;
 }
 
+.date {
+  color: lightgrey;
+}
+
 mark:hover span {
   display: none;
 }
@@ -110,3 +118,4 @@ mark:hover span {
 mark:hover:before {
   content: "Sydney UTC+10:00";
 }
+

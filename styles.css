@@ -107,10 +107,6 @@ video {
   margin-top: 1rem;
 }
 
-.date {
-  color: lightgrey;
-}
-
 mark:hover span {
   display: none;
 }

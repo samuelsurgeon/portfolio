@@ -38,6 +38,15 @@ body {
   margin: 1rem;
 }
 
+br::selection {
+  background-color: lightgrey;
+}
+
+section::selection {
+  background-color: lightgrey;
+}
+
+
 h1 {
   min-width: 20%;
   font-weight: 400;

@@ -10,13 +10,10 @@
   .bio {
     display: none;
   }
-}
-/*
-@media only screen and (min-width: 800px) {
-  html {
+  br::selection {
+    background-color: lightgrey;
   }
 }
-*/
 
 @media only screen and (min-width: 1000px) {
   html {
@@ -25,6 +22,10 @@
 
   .bio {
     display: block;
+  }
+
+  br::selection {
+    background-color: lightgrey;
   }
 }
 
@@ -116,11 +117,7 @@ video {
   margin-top: 1rem;
 }
 
-mark:hover span {
-  display: none;
-}
-
-mark:hover:before {
-  content: "Sydney UTC+10:00";
+.message {
+  color: lightgrey;
 }
 

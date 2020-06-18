@@ -5,7 +5,7 @@
 
 @media only screen and (min-width: 200px) {
   html {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .bio {
@@ -42,9 +42,9 @@ body {
 }
 
 article {
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid #000000;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #F0F0F0;
 }
 
 video {
@@ -107,6 +107,7 @@ section::selection {
 }
 
 .banner {
+  margin-bottom: 16rem;
   display: flex;
   justify-content: space-between;
 }
@@ -119,11 +120,9 @@ section::selection {
   max-width: 35%;
 }
 
-.title {
-  margin-top: 1rem;
-}
-
-.message {
-  color: lightgrey;
+.description {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 

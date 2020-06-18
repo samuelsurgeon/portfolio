@@ -41,6 +41,10 @@ body {
   margin: 1rem;
 }
 
+article {
+  border-top: 1px solid #000000;
+}
+
 video {
   margin-top: 4rem;
   min-width: 100%;

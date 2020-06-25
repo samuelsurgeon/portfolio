@@ -180,5 +180,12 @@ a {
   max-width: 60rem;
 }
 
+.footer-section {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 

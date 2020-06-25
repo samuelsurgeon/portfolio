@@ -115,7 +115,12 @@ a {
   margin-top: 3rem;
   padding-top: 2rem;
   display: flex;
+  justify-content: space-between;
   border-top: 1px solid var(--selection-background);
+}
+
+.project-description {
+  width: 20rem;
 }
 
 .project-video {

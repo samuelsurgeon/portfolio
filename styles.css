@@ -61,14 +61,17 @@ a {
 }
 
 .landing-information-text {
+  display: flex;
+  flex-direction: column;
   max-height: 0;
+  font-size: 1.25rem;
   overflow: hidden;
   transition: max-height 0.4s;
 }
 
 .landing-information-text-paragraph {
-  margin-top: 0.5rem;
-  width: 25rem;
+  margin-top: 1rem;
+  width: 30rem;
 }
 
 .landing-details-wrapper {

@@ -1,0 +1,47 @@
+:root {
+  --background: #F5F5F5;
+  --selection-background: #CCD4D9;
+  --typeface-color: #151B1C;
+}
+
+::selection {
+  background-color: var(--selection-background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: var(--typeface-color);
+}
+
+body {
+  padding: 5rem;
+  background-color: var(--background);
+}
+
+/* Landing section */
+
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.landing-title {
+  font-size: 12rem;
+  line-height: 10rem;
+}
+
+.landing-details-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-details-wrapper {
+  display: flex;
+}

@@ -23,6 +23,11 @@ body {
   background-color: var(--background);
 }
 
+a {
+  text-decoration: none;
+  color: var(--typeface-color);
+}
+
 /* Landing section */
 
 .landing-section {
@@ -42,12 +47,24 @@ body {
   justify-content: space-between;
 }
 
+.landing-information-button {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.landing-information-text {
+  display: none;
+  overflow: hidden;
+}
+
 .landing-information-text-paragraph {
-  width: 20rem;
+  margin-top: 0.5rem;
+  width: 25rem;
 }
 
 .landing-details-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 30rem;
 }

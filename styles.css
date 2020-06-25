@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  padding: 5rem;
+  padding: 1.5rem;
   background-color: var(--background);
 }
 
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 95vh;
 }
 
 .landing-title {
@@ -42,6 +42,12 @@ body {
   justify-content: space-between;
 }
 
+.landing-information-text-paragraph {
+  width: 20rem;
+}
+
 .landing-details-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 30rem;
 }

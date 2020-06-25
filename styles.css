@@ -107,26 +107,41 @@ a {
   margin-top: 10rem;
 }
 
+.selected-works-title {
+  font-size: 5rem;
+}
+
 .project-article {
   margin-top: 3rem;
   padding-top: 2rem;
+  padding-bottom: 7rem;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--selection-background);
   border-bottom: 1px solid var(--selection-background);
 }
 
+.project-number {
+  font-size: 1.25rem;
+}
+
+.project-title {
+  font-size: 1.75rem;
+}
+
 .project-description {
   width: 20rem;
+  font-size: 1.25rem;
 }
 
 .project-date {
-  margin-top: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 80%;
   border-top: 1px solid var(--selection-background);
 }
 
@@ -141,11 +156,12 @@ a {
 }
 
 .project-platform {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 80%;
   border-top: 1px solid var(--selection-background);
   border-bottom: 1px solid var(--selection-background);
 }

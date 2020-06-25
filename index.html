@@ -28,7 +28,7 @@
     </section>
     <section class="scroll-bar-section">
       <div class="scroll-bar-element">
-        <h2 class="scroll-bar-text">Github: samuelsurgeon &emsp; Twitter: @samuel_surgeon &emsp; Instagram: @samuel_surgeon &emsp; LinkedIn: Samuel Surgeon &emsp; E-Mail: hello@samuelsurgeon.com &emsp; &#8226; &emsp; Currently available for freelance work &emsp; &#8226; &emsp;</h2>
+        <h2 class="scroll-bar-text">Github: <a class="scroll-bar-text-link" href="http://github.com/samuelsurgeon/" target="_blank">samuelsurgeon</a> &emsp; Twitter: @samuel_surgeon &emsp; Instagram: @samuel_surgeon &emsp; LinkedIn: Samuel Surgeon &emsp; Mail: hello@samuelsurgeon.com &emsp; &#8226; &emsp; Currently available for freelance work &emsp; &#8226; &emsp;</h2>
       </div>
     </section>
     <!--
@@ -67,6 +67,34 @@
     </article>
     -->
   <script>
+    /* scrollBar functionality */
+    window.addEventListener('load', () => {
+      function go() {
+        i = i < width ? i + step : 1;
+        m.style.marginLeft = -i + 'px';
+      }
+      let i = 0;
+      let step = 3;
+      let space = '&nbsp;&nbsp;';
+
+      let m = document.querySelector('.scroll-bar-element');
+      let t = m.innerHTML;
+      m.innerHTML = t + space;
+      m.style.position = 'absolute';
+      let width = (m.clientWidth + 1);
+      m.style.position = '';
+      m.innerHTML = t + space + t + space + t + space + t + space + t + space + t + space + t + space;
+      let scrollBarSection = document.querySelector('.scroll-bar-section');
+      scrollBarSection.addEventListener('mouseenter', () => {
+        step = 0;
+      }, true);
+      scrollBarSection.addEventListener('mouseleave', () => {
+        step = 3;
+      }, true);
+      let x = setInterval(go, 50);
+    }, true);
+
+    /* informationButton functionality */
     let informationButton = document.querySelector('.landing-information-button');
     informationButton.addEventListener('click', () => {
       let informationText = document.querySelector('.landing-information-text');

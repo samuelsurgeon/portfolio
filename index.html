@@ -71,25 +71,25 @@
     window.addEventListener('load', () => {
       function go() {
         i = i < width ? i + step : 1;
-        m.style.marginLeft = -i + 'px';
+        scrollBarElement.style.marginLeft = -i + 'px';
       }
       let i = 0;
-      let step = 3;
+      let step = 1;
       let space = '&nbsp;&nbsp;';
 
-      let m = document.querySelector('.scroll-bar-element');
-      let t = m.innerHTML;
-      m.innerHTML = t + space;
-      m.style.position = 'absolute';
-      let width = (m.clientWidth + 1);
-      m.style.position = '';
-      m.innerHTML = t + space + t + space + t + space + t + space + t + space + t + space + t + space;
+      let scrollBarElement = document.querySelector('.scroll-bar-element');
+      let text = scrollBarElement.innerHTML;
+      scrollBarElement.innerHTML = text + space;
+      scrollBarElement.style.position = 'absolute';
+      let width = (scrollBarElement.clientWidth + 1);
+      scrollBarElement.style.position = '';
+      scrollBarElement.innerHTML = text + space + text + space + text + space + text + space + text + space + text + space + text + space;
       let scrollBarSection = document.querySelector('.scroll-bar-section');
       scrollBarSection.addEventListener('mouseenter', () => {
         step = 0;
       }, true);
       scrollBarSection.addEventListener('mouseleave', () => {
-        step = 3;
+        step = 1;
       }, true);
       let x = setInterval(go, 50);
     }, true);

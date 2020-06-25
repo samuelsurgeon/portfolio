@@ -107,20 +107,57 @@ a {
   margin-top: 10rem;
 }
 
-.selected-works-text {
-  
-}
-
 .project-article {
   margin-top: 3rem;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--selection-background);
+  border-bottom: 1px solid var(--selection-background);
 }
 
 .project-description {
   width: 20rem;
+}
+
+.project-date {
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--selection-background);
+}
+
+.project-date-title {
+  font-size: 0.75rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.project-date-text-wrapper {
+  width: 10rem;
+}
+
+.project-platform {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--selection-background);
+  border-bottom: 1px solid var(--selection-background);
+}
+
+.project-platform-title {
+  font-size: 0.75rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.project-platform-text-wrapper {
+  width: 10rem;
 }
 
 .project-video {

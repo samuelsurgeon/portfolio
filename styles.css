@@ -49,12 +49,21 @@ a {
 
 .landing-information-button {
   cursor: pointer;
-  transition: 1s;
+}
+
+.landing-information-title {
+  width: 8rem;
+  transition: 0.3s;
+}
+
+.landing-information-title:hover {
+  opacity: 0.5;
 }
 
 .landing-information-text {
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.4s;
 }
 
 .landing-information-text-paragraph {

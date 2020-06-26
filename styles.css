@@ -2,6 +2,7 @@
   --background: #F5F5F5;
   --selection-background: #CCD4D9;
   --typeface-color: #151B1C;
+  --knockout: #000000;
 }
 
 ::selection {
@@ -179,13 +180,17 @@ a {
   width: 10rem;
 }
 
+.project-video-wrapper {
+  background-color: var(--knockout);
+}
+
 .project-video {
   max-width: 60rem;
   transition: 0.2s;
 }
 
 .project-video:hover {
-  opacity: 0.75;
+  opacity: 0.4;
 }
 
 .footer-section {

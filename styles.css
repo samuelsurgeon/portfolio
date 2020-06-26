@@ -107,14 +107,26 @@ a {
   }
 }
 
-@media only screen and (min-width: 650px) and (max-width: 850px) {
+@media only screen and (min-width: 650px) and (max-width: 1200px) {
   html {
-    font-size: 14px;
+    font-size: 20px;
+  }
+  
+  .landing-section {
+    height: 80vh !important;
   }
 
   .landing-title {
-    font-size: 8rem !important;
-    line-height: 7rem !important;
+    font-size: 6rem !important;
+    line-height: 5rem !important;
+  }
+
+  .landing-details-wrapper {
+    justify-content: flex-end !important;
+  }
+
+  .landing-location {
+    display: none !important;
   }
 
   .project-article {
@@ -125,18 +137,16 @@ a {
     margin-top: 2rem !important;
   }
 
+  .project-video {
+    max-width: 40rem !important;
+  }
+
   .project-description-section {
     max-width: 25rem !important;
   }
 
   .project-date-text-wrapper {
     max-width: 10rem !important;
-  }
-}
-
-@media only screen and (min-width: 850px) and (max-width: 1200px) {
-  html {
-    font-size: 14px;
   }
 }
 

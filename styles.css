@@ -31,7 +31,7 @@ a {
 
 @media only screen and (max-width: 500px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .landing-title {
@@ -70,7 +70,7 @@ a {
 
 @media only screen and (min-width: 500px) and (max-width: 650px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .landing-title {
@@ -109,7 +109,7 @@ a {
 
 @media only screen and (min-width: 650px) and (max-width: 850px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .landing-title {
@@ -136,7 +136,7 @@ a {
 
 @media only screen and (min-width: 850px) and (max-width: 1000px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 

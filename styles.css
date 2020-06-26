@@ -53,11 +53,11 @@ a {
 
 .landing-information-title {
   width: 8rem;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .landing-information-title:hover {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .landing-information-text {
@@ -111,7 +111,7 @@ a {
 }
 
 .selected-works-title {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .project-article {
@@ -149,7 +149,7 @@ a {
 }
 
 .project-date-title {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -170,7 +170,7 @@ a {
 }
 
 .project-platform-title {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -181,6 +181,11 @@ a {
 
 .project-video {
   max-width: 60rem;
+  transition: 0.2s;
+}
+
+.project-video:hover {
+  opacity: 0.75;
 }
 
 .footer-section {

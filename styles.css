@@ -170,13 +170,21 @@ a {
 
 @media only screen and (min-width: 3200px) and (max-width: 4000px) {
   html {
-    font-size: 32px;
+    font-size: 32px !important;
+  }
+
+  .project-video {
+    max-width: 32rem !important;
   }
 }
 
 @media only screen and (min-width: 4000px) {
   html {
     font-size: 48px;
+  }
+
+  .project-video {
+    max-width: 32rem !important;
   }
 }
 

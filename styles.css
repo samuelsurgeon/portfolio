@@ -181,7 +181,20 @@ a {
 }
 
 .project-video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--knockout);
+}
+
+.project-video-wrapper:hover .project-video-hidden-text {
+  opacity: 1;
+}
+
+.project-video-hidden-text {
+  position: absolute;
+  color: var(--background);
+  opacity: 0;
 }
 
 .project-video {

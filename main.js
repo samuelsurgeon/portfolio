@@ -36,3 +36,4 @@ function enableInformationSlideout() {
     informationText.style.maxHeight ? informationText.style.maxHeight = null : informationText.style.maxHeight = informationText.scrollHeight + 'px';
   });
 }
+

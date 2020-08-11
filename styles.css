@@ -37,7 +37,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 89vh;
 }
 
 .landing-title-section {
@@ -114,12 +114,13 @@ a {
 
 .scroll-bar-text {
   display: inline;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 200;
   text-transform: uppercase;
 }
 
 .scroll-bar-text-link {
+  opacity: 0.75;
   transition: 0.3s;
 }
 
@@ -138,68 +139,9 @@ a {
 }
 
 .project-article {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 7rem;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid var(--selection-background);
-  border-bottom: 1px solid var(--selection-background);
-}
-
-.project-number {
-  font-size: 1.25rem;
-}
-
-.project-title {
-  font-size: 1.75rem;
-}
-
-.project-description {
-  width: 20rem;
-  font-size: 1.25rem;
-}
-
-.project-date {
-  margin-top: 1.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 80%;
-  border-top: 1px solid var(--selection-background);
-}
-
-.project-date-title {
-  font-size: 0.7rem;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-.project-date-text-wrapper {
-  width: 10rem;
-}
-
-.project-platform {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 80%;
-  border-top: 1px solid var(--selection-background);
-  border-bottom: 1px solid var(--selection-background);
-}
-
-.project-platform-title {
-  font-size: 0.7rem;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-
-.project-platform-text-wrapper {
-  width: 10rem;
+  position: absolute;
+  top: 200px;
+  left: 350px;
 }
 
 .project-video-wrapper {
@@ -209,31 +151,7 @@ a {
   background-color: var(--knockout);
 }
 
-.project-video-wrapper:hover .project-video-hidden-text {
-  opacity: 1;
-}
-
-.project-video-hidden-text {
-  position: absolute;
-  color: var(--background);
-  opacity: 0;
-}
-
 .project-video {
-  max-width: 60rem;
-  transition: 0.2s;
-}
-
-.project-video:hover {
-  opacity: 0.4;
-}
-
-/* Footer section */
-
-.footer-section {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  display: flex;
-  justify-content: space-between;
+  max-width: 40rem;
 }
 

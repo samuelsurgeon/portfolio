@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  padding: 1.5rem;
   padding-top: 1.25rem;
   background-color: var(--background);
 }
@@ -33,6 +32,8 @@ a {
 /* Landing section */
 
 .landing-section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,19 +107,15 @@ a {
 /* Scroll bar section */
 
 .scroll-bar-section {
-  margin-top: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  border-top: 1px solid var(--selection-background);
-  border-bottom: 1px solid var(--selection-background);
+  margin-top: 3rem;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .scroll-bar-text {
   display: inline;
-  font-size: 0.75rem;
-  font-weight: 100;
+  font-size: 1rem;
+  font-weight: 200;
   text-transform: uppercase;
 }
 

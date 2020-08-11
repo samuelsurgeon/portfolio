@@ -21,6 +21,7 @@ html {
 
 body {
   padding: 1.5rem;
+  padding-top: 1.25rem;
   background-color: var(--background);
 }
 
@@ -39,8 +40,8 @@ a {
 }
 
 .landing-title {
-  font-size: 12rem;
-  line-height: 10rem;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .landing-details-section {

@@ -29,32 +29,6 @@ a {
   color: var(--typeface-color);
 }
 
-#wv {
-  /*
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  */
-  display: flex;
-  flex-direction: column;
-}
-
-#hearth {
-  /*
-  position: absolute;
-  top: 350px;
-  left: 420px;
-  */
-}
-
-#sav {
-  /*
-  position: absolute;
-  top: 175px;
-  left: 880px;
-  */
-}
-
 /* Landing section */
 
 .landing-section {

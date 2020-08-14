@@ -1,9 +1,9 @@
 :root {
   --background: #F5F5F5;
-    --selection-background: #CCD4D9;
-    --typeface-color: #151B1C;
-    --knockout: #000000;
-  }
+  --selection-background: #CCD4D9;
+  --typeface-color: #151B1C;
+  --knockout: #000000;
+}
 
 ::selection {
   background-color: var(--selection-background);

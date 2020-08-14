@@ -49,13 +49,48 @@ a {
 }
 
 .carousel-wrapper {
-  display: flex;
+  overflow: hidden;
   width: 100%;
-  background-color: light-grey;
 }
 
 .carousel {
-  display: flex;
+  transform-style: preserve-3d;
+}
+
+.carousel-article {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  opacity: 0;
+  z-index: 9;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carousel-article.initial,
+.carousel-article.active {
+  opacity: 1;
+  position: relative;
+  z-index: 9;
+}
+
+.carousel-article.prev,
+.carousel-article.next {
+  z-index: 8;
+}
+
+.carousel-article.prev {
+  transform: translateX(-100%);
+}
+
+.carousel-article.next {
+  transform: translateX(100%);
+}
+
+.carousel-button-prev,
+.carousel-button-next {
+  
 }
 
 .landing-title {

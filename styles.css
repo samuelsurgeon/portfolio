@@ -29,6 +29,18 @@ a {
   color: var(--typeface-color);
 }
 
+#wv {
+  position: absolute;
+}
+
+#hearth {
+  position: absolute;
+}
+
+#sav {
+  position: absolute;
+}
+
 /* Landing section */
 
 .landing-section {

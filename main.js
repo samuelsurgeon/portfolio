@@ -131,7 +131,6 @@ function enableInformationSlideout() {
   let informationButton = document.querySelector('.landing-information-button');
   informationButton.addEventListener('click', () => {
     let carouselWrapper = document.querySelector('.carousel-wrapper');
-    let scrollBarSection = document.querySelector('.scroll-bar-section');
     let informationText = document.querySelector('.landing-information-text');
 
     if (informationText.style.maxHeight) {

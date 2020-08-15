@@ -94,15 +94,24 @@ a {
   transform: translateX(100%);
 }
 
-.carousel-button-prev,
+.carousel-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  cursor: w-resize;
+  z-index: 10;
+
+}
+
 .carousel-button-next {
   position: absolute;
   top: 50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: blue;
+  width: 50%;
+  height: 100%;
   transform: translateY(-50%);
-  cursor: pointer;
+  cursor: e-resize;
   z-index: 10;
 }
 
@@ -230,14 +239,20 @@ a {
 }
 
 .video-description {
+  padding-right: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 30rem;
+}
+
+.date-and-number {
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-video-wrapper {
   display: flex;
-  align-items: flex-end;
 }
 
 .project-video {

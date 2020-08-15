@@ -3,6 +3,7 @@ let items = document.querySelectorAll(`.${itemClassName}`);
 let totalItems = items.length;
 let slide = 0;
 let moving = true;
+let projectLinks = ['https://samuelsurgeon.github.io/weather-visualiser/', 'https://hearth-prototype.web.app/', 'https://samuelsurgeon.github.io/sorting-visualiser/'];
 
 enableContactTicker();
 enableInformationSlideout();
@@ -12,6 +13,10 @@ initCarousel();
 function initCarousel() {
   setInitialClasses();
   setEventListeners();
+
+  let link = document.querySelectorAll('.link-target');
+  link.forEach(element => element.href = projectLinks[0]);
+  projectLinks.push(projectLinks.shift());
 
   moving = false;
 }
@@ -45,6 +50,10 @@ function removeUnderlineLink() {
 
 function moveNext() {
   if (!moving) {
+    let link = document.querySelectorAll('.link-target');
+    link.forEach(element => element.href = projectLinks[0]);
+    projectLinks.push(projectLinks.shift());
+
     if (slide === (totalItems - 1)) {
       slide = 0;
     } else {
@@ -57,6 +66,10 @@ function moveNext() {
 
 function movePrev() {
   if (!moving) {
+    let link = document.querySelectorAll('.link-target');
+    link.forEach(element => element.href = projectLinks[1]);
+    projectLinks.unshift(projectLinks.pop());
+
     if (slide === 0) {
       slide = (totalItems - 1);
     } else {

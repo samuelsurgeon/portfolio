@@ -1,5 +1,4 @@
 let itemClassName = 'carousel-article';
-console.log(itemClassName);
 let items = document.querySelectorAll(`.${itemClassName}`);
 let totalItems = items.length;
 let slide = 0;
@@ -24,11 +23,11 @@ function setInitialClasses() {
 }
 
 function setEventListeners() {
-  let next = document.querySelectorAll('.carousel-button-next')[0];
-  let prev = document.querySelectorAll('.carousel-button-prev')[0];
+  let next = document.querySelector('.carousel-button-next');
+  let prev = document.querySelector('.carousel-button-prev');
 
   next.addEventListener('click', moveNext);
-  next.addEventListener('click', movePrev);
+  prev.addEventListener('click', movePrev);
 }
 
 function moveNext() {
@@ -72,7 +71,7 @@ function moveCarouselTo(slide) {
         oldPrevious = slide - 2,
         oldNext = slide + 2;
 
-    if ((totalItems - 1) > 3) {
+    if (totalItems > 3) {
       if (newPrevious <= 0) {
         oldPrevious = (totalItems - 1);
       } else if (newNext >= (totalItems - 1)) {
@@ -88,7 +87,8 @@ function moveCarouselTo(slide) {
         newNext = 0;
         oldNext = 1;
       }
-
+      
+      console.log(items[oldPrevious].className);
       items[oldPrevious].className = itemClassName;
       items[oldNext].className = itemClassName;
 

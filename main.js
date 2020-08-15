@@ -1,4 +1,5 @@
 let itemClassName = 'carousel-article';
+console.log(itemClassName);
 let items = document.querySelectorAll(`.${itemClassName}`);
 let totalItems = items.length;
 let slide = 0;

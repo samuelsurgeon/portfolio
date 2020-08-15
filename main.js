@@ -25,9 +25,22 @@ function setInitialClasses() {
 function setEventListeners() {
   let next = document.querySelector('.carousel-button-next');
   let prev = document.querySelector('.carousel-button-prev');
+  let link = document.querySelectorAll('.link');
 
   next.addEventListener('click', moveNext);
   prev.addEventListener('click', movePrev);
+  link.forEach(element => element.addEventListener('mouseover', addUnderlineLink));
+  link.forEach(element => element.addEventListener('mouseout', removeUnderlineLink));
+}
+
+function addUnderlineLink() {
+  let link = document.querySelectorAll('.link');
+  link.forEach(element => element.style.textDecoration = 'underline');
+}
+
+function removeUnderlineLink() {
+  let link = document.querySelectorAll('.link');
+  link.forEach(element => element.style.textDecoration = 'none');
 }
 
 function moveNext() {
@@ -88,7 +101,6 @@ function moveCarouselTo(slide) {
         oldNext = 1;
       }
       
-      console.log(items[oldPrevious].className);
       items[oldPrevious].className = itemClassName;
       items[oldNext].className = itemClassName;
 

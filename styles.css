@@ -237,7 +237,6 @@ a {
 .video-title {
   font-size: 1.25rem;
   font-weight: 200;
-  z-index: 11;
 }
 
 .video-description {
@@ -246,7 +245,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   width: 27.5rem;
-  z-index: 1;
 }
 
 .date-and-number {
@@ -264,8 +262,7 @@ a {
 }
 
 .link {
+  font-size: 1.25rem;
+  font-weight: 200;
 }
 
-.link:hover {
-  cursor: pointer;
-}

@@ -90,7 +90,38 @@ a {
 
 .carousel-button-prev,
 .carousel-button-next {
-  
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: blue;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button-prev {
+  left: 0;
+}
+
+.carousel-button-next {
+  right: 0;
+}
+
+.carousel-button-prev::after,
+.carousel-button-next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel-button-next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .landing-title {

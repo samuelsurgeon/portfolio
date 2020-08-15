@@ -157,11 +157,19 @@ function enableInformationSlideout() {
   informationButton.addEventListener('click', () => {
     let carouselWrapper = document.querySelector('.carousel-wrapper');
     let informationText = document.querySelector('.landing-information-text');
+    let next = document.querySelector('.carousel-button-next');
+    let prev = document.querySelector('.carousel-button-prev');
 
     if (informationText.style.maxHeight) {
+      next.style.display = 'block';
+      prev.style.display = 'block';
+
       carouselWrapper.style.opacity = 1;
       informationText.style.maxHeight = null;
     } else {
+      next.style.display = 'none';
+      prev.style.display = 'none';
+
       carouselWrapper.style.opacity = 0.025;
       informationText.style.maxHeight = informationText.scrollHeight + 'px';
     }

@@ -205,6 +205,7 @@ a {
 /* Scroll bar section */
 
 .scroll-bar-section {
+  padding-bottom: 0.5rem;
   overflow: hidden;
   white-space: nowrap;
 }

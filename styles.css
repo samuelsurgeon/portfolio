@@ -107,9 +107,9 @@ a {
 
 .carousel-button-next {
   position: absolute;
-  top: 50%;
+  top: 47.5%;
   width: 50%;
-  height: 100%;
+  height: 95%;
   transform: translateY(-50%);
   cursor: url(next.png), auto;
   z-index: 10;

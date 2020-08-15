@@ -130,8 +130,18 @@ function enableContactTicker() {
 function enableInformationSlideout() {
   let informationButton = document.querySelector('.landing-information-button');
   informationButton.addEventListener('click', () => {
+    let carouselWrapper = document.querySelector('.carousel');
+    let scrollBarSection = document.querySelector('.scroll-bar-section');
     let informationText = document.querySelector('.landing-information-text');
-    informationText.style.maxHeight ? informationText.style.maxHeight = null : informationText.style.maxHeight = informationText.scrollHeight + 'px';
+
+    if (informationText.style.maxHeight) {
+      carouselWrapper.style.transform = 'translateY(0)';
+      informationText.style.maxHeight = null;
+    } else {
+      carouselWrapper.style.transform = 'translateY(60%)';
+      informationText.style.maxHeight = informationText.scrollHeight + 'px';
+    }
+    // DO THIS IN CSS carouselWrapper.style.transition = '.5s';
   });
 }
 

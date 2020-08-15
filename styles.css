@@ -54,10 +54,12 @@ a {
   overflow: hidden;
   width: 100%;
   height: 90%;
+  z-index: -1;
 }
 
 .carousel {
   transform-style: preserve-3d;
+  transition: 2s;
 }
 
 .carousel-article {
@@ -179,7 +181,7 @@ a {
 .landing-information-text {
   display: flex;
   flex-direction: column;
-  max-height: 0;
+  max-height: 1rem;
   font-size: 1.25rem;
   font-weight: 200;
   overflow: hidden;

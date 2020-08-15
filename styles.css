@@ -49,6 +49,8 @@ a {
 }
 
 .carousel-wrapper {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   width: 100%;
   height: 90%;
@@ -56,7 +58,6 @@ a {
 
 .carousel {
   transform-style: preserve-3d;
-  height: 100%;
 }
 
 .carousel-article {
@@ -65,11 +66,12 @@ a {
   width: 100%;
   height: 100%;
   margin: auto;
-  padding: 1rem 4rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   opacity: 0;
   z-index: 9;
-  transition: transform 1s, opacity .5s, z-index .5s;
-  background-color: green;
+  transition: transform 1s, opacity 0.5s, z-index .5s;
 }
 
 .carousel-article.initial,
@@ -190,6 +192,8 @@ a {
 /* Scroll bar section */
 
 .scroll-bar-section {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -221,18 +225,23 @@ a {
 }
 
 .video-title {
-  display: none;
-  margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 200;
 }
 
 .video-description {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.project-video-wrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
 .project-video {
-  max-width: 40rem;
+  margin-right: 2rem;
+  max-width: 70rem;
 }
 

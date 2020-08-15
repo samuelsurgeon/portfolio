@@ -184,6 +184,7 @@ a {
   font-weight: 200;
   overflow: hidden;
   transition: max-height 0.4s;
+  margin-bottom: 3rem;
 }
 
 .landing-information-text-paragraph {

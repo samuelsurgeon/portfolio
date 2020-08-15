@@ -130,15 +130,15 @@ function enableContactTicker() {
 function enableInformationSlideout() {
   let informationButton = document.querySelector('.landing-information-button');
   informationButton.addEventListener('click', () => {
-    let carouselWrapper = document.querySelector('.carousel');
+    let carouselWrapper = document.querySelector('.carousel-wrapper');
     let scrollBarSection = document.querySelector('.scroll-bar-section');
     let informationText = document.querySelector('.landing-information-text');
 
     if (informationText.style.maxHeight) {
-      carouselWrapper.style.transform = 'translateY(0)';
+      carouselWrapper.style.opacity = 1;
       informationText.style.maxHeight = null;
     } else {
-      carouselWrapper.style.transform = 'translateY(60%)';
+      carouselWrapper.style.opacity = 0.025;
       informationText.style.maxHeight = informationText.scrollHeight + 'px';
     }
     // DO THIS IN CSS carouselWrapper.style.transition = '.5s';

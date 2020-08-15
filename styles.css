@@ -49,6 +49,18 @@ a {
   max-width: 79%;
 }
 
+.landing-title-link:hover {
+  opacity: 0.75;
+}
+
+.landing-phone-link {
+  cursor: pointer;
+}
+
+.landing-phone-link:hover {
+  opacity: 0.75;
+}
+
 .carousel-wrapper {
   display: flex;
   align-items: center;
@@ -173,7 +185,7 @@ a {
 }
 
 .landing-information-title:hover {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .landing-information-text {
